@@ -521,9 +521,9 @@ class TimedTextEditor extends React.Component {
   render() {
     // console.log('render TimedTextEditor');
     const currentWord = this.getCurrentWord();
-    const highlightColour = "#000";
-    const unplayedColor = "#000";
-    const correctionBorder = "10px dotted blue";
+    const highlightColour = "#87a4d0";
+    const unplayedColor = "#767676";
+    const correctionBorder = "1px dotted blue";
 
     // Time to the nearest half second
     const time = Math.round(this.props.currentTime * 4.0) / 4.0;
