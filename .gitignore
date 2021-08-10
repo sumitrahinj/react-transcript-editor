@@ -11,8 +11,6 @@
 # production
 /build
 
-# component to distribute to npm 
-/dist
 
 # misc
 .DS_Store
