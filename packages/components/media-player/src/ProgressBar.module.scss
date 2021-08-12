@@ -1,11 +1,11 @@
-@import '../../../config/style-guide/colours.scss';
+@import "../../../config/style-guide/colours.scss";
 
 $slider-width-number: 1440;
 $slider-width: #{$slider-width-number}px;
 $slider-height: 10px;
 $background-slider: $color-light-grey;
 $bar-slider-filled: $color-labs-red;
-$thumb-width: 16px;
+$thumb-width: 24px;
 $thumb-height: 24px;
 $shadow-size: -7px;
 $fit-thumb-in-slider: -7px;
@@ -31,7 +31,9 @@ $fit-thumb-in-slider: -7px;
   left: 0;
   bottom: -16px;
 }
-
+.progress-wrapper {
+  position: relative;
+}
 .bar {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -41,12 +43,13 @@ $fit-thumb-in-slider: -7px;
   width: 100%;
   height: 30px;
   margin: 0;
+  border-radius: 50%;
 
   // Chrome
   &::-webkit-slider-runnable-track {
     height: $slider-height;
     width: $slider-width;
-    content: '';
+    content: "";
     pointer-events: none;
     background: $bar-slider-filled;
   }
@@ -57,6 +60,7 @@ $fit-thumb-in-slider: -7px;
     width: $thumb-width;
     margin-top: $fit-thumb-in-slider;
     background: $color-labs-red;
+    border-radius: 50%;
     box-shadow: makelongshadow($color-light-grey, $shadow-size);
   }
 
@@ -64,7 +68,7 @@ $fit-thumb-in-slider: -7px;
   &::-moz-range-track {
     height: $slider-height;
     width: $slider-width;
-    content: '';
+    content: "";
     pointer-events: none;
     background: $bar-slider-filled;
   }

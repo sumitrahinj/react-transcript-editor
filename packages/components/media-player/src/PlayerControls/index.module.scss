@@ -1,4 +1,4 @@
-@import '../../../../config/style-guide/colours.scss';
+@import "../../../../config/style-guide/colours.scss";
 
 .playerControls {
   margin-bottom: 0.5em;
@@ -11,35 +11,30 @@
 .playerControls > *:not(:last-child) {
   margin-right: 0.5em;
 }
-
 .playerButton {
   width: 48px;
   height: 48px;
-  padding: 0.5em;
+  padding: 0;
   border: 0;
-  color: white;
-  background: $color-darkest-grey;
+  color: #495057;
+  background: #fff;
   font-size: 1em;
   cursor: pointer;
   margin-right: 0.3rem;
   margin-top: 0.3rem;
-
-  &:hover {
-    background: $color-dark-grey;
-  }
 }
 
 .playBackRate {
   width: 70px;
   border: 0;
-  color: white;
+  color: #495057;
   font-size: 1em;
   cursor: pointer;
   position: relative;
   margin-right: 0.3rem;
 
   &::before {
-    content: '×';
+    content: "×";
     position: absolute;
     bottom: -2px;
     left: 21px;
@@ -52,12 +47,12 @@
     outline: none;
     width: auto;
     width: 100%;
-    color: white;
-    background-color: $color-darkest-grey;
+    color: #495057;
+    background-color: #fff;
     cursor: pointer;
 
     &:hover {
-      background-color: $color-dark-grey;
+      background-color: #fff;
     }
   }
 }
@@ -72,7 +67,7 @@
   .currentTime {
     color: $color-light-shilo;
     cursor: pointer;
-    font-family: 'Lucida Console', monospace;
+    font-family: "Lucida Console", monospace;
   }
 
   .separator {
@@ -81,13 +76,12 @@
   }
 
   .duration {
-    color: white;
-    font-family: 'Lucida Console',  monospace;
+    color: #495057;
+    font-family: "Lucida Console", monospace;
   }
 }
 
 @media (max-width: 768px) {
-
   .playerControls {
     display: grid;
     grid-template-rows: 10% 3rem 3rem;
@@ -136,7 +130,7 @@
     }
 
     .duration {
-      color: white;
+      color: #495057;
       font-size: 0.7em;
       float: right;
       line-height: 1em;

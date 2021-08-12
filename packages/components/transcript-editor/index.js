@@ -11,13 +11,13 @@ import ExportOptions from "./src/ExportOptions.js";
 import style from "./index.module.css";
 
 // TODO: move to another file with tooltip - rename HowDoesThisWork or HelpMessage
-import HowDoesThisWork from "./src/HowDoesThisWork.js";
+// import HowDoesThisWork from "./src/HowDoesThisWork.js";
 
 const exportOptionsList = [
   { value: "txt", label: "Text file" },
   {
     value: "txtspeakertimecodes",
-    label: "Text file - with Speakers and Timecodes"
+    label: "Text file - with Speakers and Timecodes",
   },
   { value: "docx", label: "MS Word" },
   { value: "srt", label: "Srt - Captions" },
@@ -29,7 +29,7 @@ const exportOptionsList = [
   { value: "pre-segment-txt", label: "Pre segmented txt - Captions" },
   { value: "json-captions", label: "Json - Captions" },
   { value: "draftjs", label: "Draft Js - json" },
-  { value: "digitalpaperedit", label: "Digital Paper Edit - Json" }
+  { value: "digitalpaperedit", label: "Digital Paper Edit - Json" },
 ];
 
 class TranscriptEditor extends React.Component {
@@ -59,7 +59,7 @@ class TranscriptEditor extends React.Component {
   static getDerivedStateFromProps(nextProps) {
     if (nextProps.transcriptData !== null) {
       return {
-        transcriptData: nextProps.transcriptData
+        transcriptData: nextProps.transcriptData,
       };
     }
 
@@ -84,7 +84,7 @@ class TranscriptEditor extends React.Component {
     let gridDisplay = {
       display: "grid",
       gridTemplateColumns: "1fr 3fr",
-      gridColumnGap: "1em"
+      gridColumnGap: "1em",
     };
     let displayMedia = null;
     // if the mediaUrl is for an audio file, then extend TimedTextEditor to be full width
@@ -103,18 +103,18 @@ class TranscriptEditor extends React.Component {
     }
     this.setState({
       gridDisplay,
-      displayMedia
+      displayMedia,
     });
   };
 
   // eslint-disable-next-line class-methods-use-this
-  handleWordClick = startTime => {
+  handleWordClick = (startTime) => {
     if (this.props.handleAnalyticsEvents) {
       this.props.handleAnalyticsEvents({
         category: "TranscriptEditor",
         action: "doubleClickOnWord",
         name: "startTime",
-        value: secondsToTimecode(startTime)
+        value: secondsToTimecode(startTime),
       });
     }
 
@@ -122,14 +122,14 @@ class TranscriptEditor extends React.Component {
   };
 
   // eslint-disable-next-line class-methods-use-this
-  handleTimeUpdate = e => {
+  handleTimeUpdate = (e) => {
     const currentTime = e.target.currentTime;
     this.setState({
-      currentTime
+      currentTime,
     });
   };
 
-  handlePlayMedia = isPlaying => {
+  handlePlayMedia = (isPlaying) => {
     this.playMedia(isPlaying);
   };
 
@@ -137,7 +137,7 @@ class TranscriptEditor extends React.Component {
     return this.isPlaying();
   };
 
-  handleIsScrollIntoViewChange = e => {
+  handleIsScrollIntoViewChange = (e) => {
     const isChecked = e.target.checked;
     this.setState({ isScrollIntoViewOn: isChecked });
 
@@ -146,11 +146,11 @@ class TranscriptEditor extends React.Component {
         category: "TranscriptEditor",
         action: "handleIsScrollIntoViewChange",
         name: "isScrollIntoViewOn",
-        value: isChecked
+        value: isChecked,
       });
     }
   };
-  handlePauseWhileTyping = e => {
+  handlePauseWhileTyping = (e) => {
     const isChecked = e.target.checked;
     this.setState({ isPauseWhileTypingOn: isChecked });
 
@@ -159,12 +159,12 @@ class TranscriptEditor extends React.Component {
         category: "TranscriptEditor",
         action: "handlePauseWhileTyping",
         name: "isPauseWhileTypingOn",
-        value: isChecked
+        value: isChecked,
       });
     }
   };
 
-  handleRollBackValueInSeconds = e => {
+  handleRollBackValueInSeconds = (e) => {
     const rollBackValue = e.target.value;
     this.setState({ rollBackValueInSeconds: rollBackValue });
 
@@ -173,18 +173,18 @@ class TranscriptEditor extends React.Component {
         category: "TranscriptEditor",
         action: "handleRollBackValueInSeconds",
         name: "rollBackValueInSeconds",
-        value: rollBackValue
+        value: rollBackValue,
       });
     }
   };
 
-  handleSetTimecodeOffset = timecodeOffset => {
+  handleSetTimecodeOffset = (timecodeOffset) => {
     this.setState({ timecodeOffset: timecodeOffset }, () => {
       this.timedTextEditorRef.current.forceUpdate();
     });
   };
 
-  handleShowTimecodes = e => {
+  handleShowTimecodes = (e) => {
     const isChecked = e.target.checked;
     this.setState({ showTimecodes: isChecked });
 
@@ -193,12 +193,12 @@ class TranscriptEditor extends React.Component {
         category: "TranscriptEditor",
         action: "handleShowTimecodes",
         name: "showTimecodes",
-        value: isChecked
+        value: isChecked,
       });
     }
   };
 
-  handleShowSpeakers = e => {
+  handleShowSpeakers = (e) => {
     const isChecked = e.target.checked;
     this.setState({ showSpeakers: isChecked });
 
@@ -207,15 +207,15 @@ class TranscriptEditor extends React.Component {
         category: "TranscriptEditor",
         action: "handleShowSpeakers",
         name: "showSpeakers",
-        value: isChecked
+        value: isChecked,
       });
     }
   };
 
   handleSettingsToggle = () => {
     this.setState(
-      prevState => ({
-        showSettings: !prevState.showSettings
+      (prevState) => ({
+        showSettings: !prevState.showSettings,
       }),
       () => {
         if (this.props.handleAnalyticsEvents) {
@@ -223,7 +223,7 @@ class TranscriptEditor extends React.Component {
             category: "TranscriptEditor",
             action: "handleSettingsToggle",
             name: "showSettings",
-            value: !this.state.showSettings
+            value: !this.state.showSettings,
           });
         }
       }
@@ -232,8 +232,8 @@ class TranscriptEditor extends React.Component {
 
   handleShortcutsToggle = () => {
     this.setState(
-      prevState => ({
-        showShortcuts: !prevState.showShortcuts
+      (prevState) => ({
+        showShortcuts: !prevState.showShortcuts,
       }),
       () => {
         if (this.props.handleAnalyticsEvents) {
@@ -241,7 +241,7 @@ class TranscriptEditor extends React.Component {
             category: "TranscriptEditor",
             action: "handleShortcutsToggle",
             name: "showShortcuts",
-            value: !this.state.showShortcuts
+            value: !this.state.showShortcuts,
           });
         }
       }
@@ -251,8 +251,8 @@ class TranscriptEditor extends React.Component {
   handleExportToggle = () => {
     console.log("handleExportToggle", this.state.showExportOptions);
     this.setState(
-      prevState => ({
-        showExportOptions: !prevState.showExportOptions
+      (prevState) => ({
+        showExportOptions: !prevState.showExportOptions,
       }),
       () => {
         if (this.props.handleAnalyticsEvents) {
@@ -260,14 +260,14 @@ class TranscriptEditor extends React.Component {
             category: "TranscriptEditor",
             action: "handleExportToggle",
             name: "showExportOptions",
-            value: !this.state.showExportOptions
+            value: !this.state.showExportOptions,
           });
         }
       }
     );
   };
 
-  handleExportOptionsChange = e => {
+  handleExportOptionsChange = (e) => {
     const exportFormat = e.target.value;
     console.log(exportFormat);
     if (exportFormat !== "instructions") {
@@ -289,7 +289,7 @@ class TranscriptEditor extends React.Component {
           category: "TranscriptEditor",
           action: "handleExportOptionsChange",
           name: "exportFile",
-          value: exportFormat
+          value: exportFormat,
         });
       }
     }
@@ -310,7 +310,7 @@ class TranscriptEditor extends React.Component {
     document.body.removeChild(link);
   };
 
-  getEditorContent = exportFormat => {
+  getEditorContent = (exportFormat) => {
     const title = this.props.title ? this.props.title : "";
 
     return this.timedTextEditorRef.current.getEditorContent(
@@ -321,18 +321,18 @@ class TranscriptEditor extends React.Component {
 
   handlePreviewIsDisplayed = () => {
     this.setState({
-      previewIsDisplayed: !this.state.previewIsDisplayed
+      previewIsDisplayed: !this.state.previewIsDisplayed,
     });
   };
 
-  onLoadedDataGetDuration = e => {
+  onLoadedDataGetDuration = (e) => {
     const currentDuration = e.target.duration;
     const currentDurationWithOffset =
       currentDuration + this.state.timecodeOffset;
     const durationInSeconds = secondsToTimecode(currentDurationWithOffset);
 
     this.setState({
-      mediaDuration: durationInSeconds
+      mediaDuration: durationInSeconds,
     });
 
     if (this.props.handleAnalyticsEvents) {
@@ -340,19 +340,19 @@ class TranscriptEditor extends React.Component {
         category: "TranscriptEditor",
         action: "onLoadedDataGetDuration",
         name: "durationInSeconds-WithoutOffset",
-        value: secondsToTimecode(currentDuration)
+        value: secondsToTimecode(currentDuration),
       });
     }
   };
 
-  handleChangePreviewViewWidth = e => {
+  handleChangePreviewViewWidth = (e) => {
     const newPreviewViewWidth = e.target.value;
     this.setState({
-      previewViewWidth: newPreviewViewWidth
+      previewViewWidth: newPreviewViewWidth,
     });
   };
 
-  handleAutoSaveChanges = data => {
+  handleAutoSaveChanges = (data) => {
     // making `TranscriptEditor` - `handleAutoSaveChanges` optional
     if (this.props.handleAutoSaveChanges) {
       this.props.handleAutoSaveChanges(data);
@@ -375,9 +375,9 @@ class TranscriptEditor extends React.Component {
         title={this.props.title ? this.props.title : ""}
         mediaDuration={this.state.mediaDuration}
         currentTime={this.state.currentTime}
-        hookSeek={foo => (this.setCurrentTime = foo)}
-        hookPlayMedia={foo => (this.playMedia = foo)}
-        hookIsPlaying={foo => (this.isPlaying = foo)}
+        hookSeek={(foo) => (this.setCurrentTime = foo)}
+        hookPlayMedia={(foo) => (this.playMedia = foo)}
+        hookIsPlaying={(foo) => (this.isPlaying = foo)}
         rollBackValueInSeconds={this.state.rollBackValueInSeconds}
         timecodeOffset={this.state.timecodeOffset}
         mediaUrl={this.props.mediaUrl}
@@ -463,7 +463,7 @@ class TranscriptEditor extends React.Component {
         settings={settings}
         shortcuts={shortcuts}
         exportOptions={exportOptions}
-        tooltip={HowDoesThisWork(this.props.handleAnalyticsEvents)}
+        // tooltip={HowDoesThisWork(this.props.handleAnalyticsEvents)}
         mediaUrl={this.props.mediaUrl}
         mediaControls={this.videoRef.current ? mediaControls : null}
         handleSettingsToggle={this.handleSettingsToggle}
@@ -477,17 +477,24 @@ class TranscriptEditor extends React.Component {
         {this.props.mediaUrl ? header : null}
 
         <div className={style.grid}>
-          <section className={style.row} style={this.state.gridDisplay}>
-            <aside className={style.aside} style={this.state.displayMedia}>
+          <section
+            className={`fullwidthAudio ${style.row}`}
+            style={this.state.gridDisplay}
+          >
+            <aside
+              className={`asideSection ${style.aside}`}
+              style={this.state.displayMedia}
+            >
               {this.props.mediaUrl ? videoPlayer : null}
             </aside>
 
             <main
-              className={
-                this.props.mediaType === "audio"
-                  ? style.mainWithAudiio
-                  : style.main
-              }
+              className={`mainAudioContent
+                ${
+                  this.props.mediaType === "audio"
+                    ? style.mainWithAudiio
+                    : style.main
+                }`}
             >
               {this.props.mediaUrl && this.props.transcriptData
                 ? timedTextEditor
@@ -510,7 +517,7 @@ TranscriptEditor.propTypes = {
   handleAnalyticsEvents: PropTypes.func,
   fileName: PropTypes.string,
   transcriptData: PropTypes.object,
-  mediaType: PropTypes.string
+  mediaType: PropTypes.string,
 };
 
 export default TranscriptEditor;

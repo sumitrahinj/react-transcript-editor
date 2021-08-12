@@ -1,4 +1,4 @@
-@import '../../config/style-guide/colours.scss';
+@import "../../config/style-guide/colours.scss";
 
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/user-select
 TODO: only working in Chrome, not working in Firefox, and Safari - OSX
@@ -7,7 +7,7 @@ Commented out because it means cannot select speakers and timecode anymore
 which is the intended default behavior but needs to come with export
 functionality to export as plain text, word etc.. otherwise user won't be able
 to get text out of component with timecodes and speaker names in the interim */
- .unselectable {
+.unselectable {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
@@ -16,49 +16,57 @@ to get text out of component with timecodes and speaker names in the interim */
 
 /* Desktop size */
 @media (min-width: 768px) {
-
   .markers {
-    display: grid;
+    display: block;
     grid-template-columns: 2fr 1fr;
+    width: 100%;
   }
 
   .WrapperBlock {
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
     overflow: hidden;
-    display: grid;
+    display: block;
     grid-template-columns: [col-speaker] minmax(200px, 18%) [col-text] minmax(
-      50%,
-      81%
-    );
-    grid-column-gap: 1%;
+        50%,
+        81%
+      );
+
     justify-content: center;
     align-content: center;
+    background: #e7f5ff;
+    padding: 15px;
   }
 
   .speaker {
-    color: $color-mid-grey;
-    font-weight: bold;
+    color: #6b737b;
     text-transform: uppercase;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
     justify-self: start;
     max-width: 100%;
+    display: block;
     text-align: left;
+    margin-left: 150px;
+    display: none;
   }
 
   .text {
-    font-size: 1em;
-    float: right;
+    font-size: 14px;
+    float: none;
     clear: right;
+    margin-left: 150px;
+    color: #343a40;
+    margin-top: -20px;
   }
 }
 
-
 .time {
-  font-weight: lighter;
+  color: #495057;
+  font-weight: 500;
   cursor: pointer;
   justify-self: start;
+  font-size: 14px;
 }
 
 .time:hover {
@@ -79,10 +87,8 @@ to get text out of component with timecodes and speaker names in the interim */
   margin-right: 0.5em;
 }
 
-
 /* Mobile devices */
 @media (max-width: 768px) {
-
   .markers {
     width: 100%;
     font-size: 0.8em;
@@ -100,7 +106,7 @@ to get text out of component with timecodes and speaker names in the interim */
   .speaker {
     padding-right: 2em;
     vertical-align: middle;
-    color: $color-mid-grey;
+    color: #6b737b;
     font-weight: bold;
     text-transform: uppercase;
     text-align: right;
@@ -108,6 +114,7 @@ to get text out of component with timecodes and speaker names in the interim */
     overflow: hidden;
     white-space: nowrap;
     text-align: left;
+    /* margin-left: 150px; */
   }
 
   .text {

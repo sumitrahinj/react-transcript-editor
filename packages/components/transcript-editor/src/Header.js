@@ -1,15 +1,10 @@
-import React from 'react';
-import {
-  faCog,
-  faKeyboard,
-  faShare
-} from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from "react";
+import { faCog, faKeyboard, faShare } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import style from '../index.module.css';
+import style from "../index.module.css";
 
 class Header extends React.Component {
-
   // to avoid unnecessary re-renders
   shouldComponentUpdate(nextProps) {
     if (nextProps !== this.props) return true;
@@ -19,18 +14,19 @@ class Header extends React.Component {
   render() {
     const props = this.props;
 
-    return (<>
-      <header className={ style.header }>
-        {props.showSettings ? props.settings : null}
-        {props.showShortcuts ? props.shortcuts : null}
-        {props.showExportOptions ? props.exportOptions : null}
-        {props.tooltip}
-      </header>
-      <nav className={ style.nav }>
-        {props.mediaUrl === null ? null : props.mediaControls}
-      </nav>
+    return (
+      <>
+        <header className={style.header}>
+          {props.showSettings ? props.settings : null}
+          {props.showShortcuts ? props.shortcuts : null}
+          {props.showExportOptions ? props.exportOptions : null}
+          {props.tooltip}
+        </header>
+        <nav className={style.nav}>
+          {props.mediaUrl === null ? null : props.mediaControls}
+        </nav>
 
-      <div className={ style.settingsContainer }>
+        {/* <div className={ style.settingsContainer }>
         <button
           className={ style.settingsButton }
           title="Settings"
@@ -52,9 +48,10 @@ class Header extends React.Component {
         >
           <FontAwesomeIcon icon={ faShare } />
         </button>
-      </div>
-    </>);
-  };
+      </div> */}
+      </>
+    );
+  }
 }
 
 export default Header;

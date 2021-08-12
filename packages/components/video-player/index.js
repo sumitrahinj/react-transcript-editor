@@ -1,9 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styles from './index.module.css';
+import React from "react";
+import PropTypes from "prop-types";
+import styles from "./index.module.css";
 
 class VideoPlayer extends React.Component {
-
   // to avoid unnecessary re-renders
   shouldComponentUpdate(nextProps) {
     if (nextProps.previewIsDisplayed !== this.props.previewIsDisplayed) {
@@ -25,23 +24,23 @@ class VideoPlayer extends React.Component {
     }
   };
   render() {
-    const isDisplayed = this.props.previewIsDisplayed ? 'inline' : 'none';
+    const isDisplayed = this.props.previewIsDisplayed ? "none" : "none";
 
     return (
       <video
         id="video"
         playsInline
-        src={ this.props.mediaUrl }
-        onTimeUpdate={ this.props.onTimeUpdate }
+        src={this.props.mediaUrl}
+        onTimeUpdate={this.props.onTimeUpdate}
         data-testid="media-player-id"
-        onClick={ this.handlePlayMedia }
-        onLoadedData={ this.props.onLoadedDataGetDuration }
-        ref={ this.props.videoRef }
-        className={ styles.videoEl }
+        onClick={this.handlePlayMedia}
+        onLoadedData={this.props.onLoadedDataGetDuration}
+        ref={this.props.videoRef}
+        className={styles.videoEl}
         preload="auto"
-        style={ {
-          display: isDisplayed
-        } }
+        style={{
+          display: isDisplayed,
+        }}
       />
     );
   }
@@ -54,7 +53,7 @@ VideoPlayer.propTypes = {
   videoRef: PropTypes.object.isRequired,
   onLoadedDataGetDuration: PropTypes.func,
   previewIsDisplayed: PropTypes.bool,
-  previewViewWidth: PropTypes.string
+  previewViewWidth: PropTypes.string,
 };
 
 export default VideoPlayer;
