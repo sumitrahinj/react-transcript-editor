@@ -12,16 +12,19 @@
   margin-right: 0.5em;
 }
 .playerButton {
-  width: 48px;
-  height: 48px;
+  width: 35px;
+  height: 35px;
   padding: 0;
-  border: 0;
+  border-radius: 50px;
   color: #495057;
-  background: #fff;
+  background: #ffffff;
   font-size: 1em;
   cursor: pointer;
-  margin-right: 0.3rem;
-  margin-top: 0.3rem;
+  margin-right: 6px;
+  margin-top: 0;
+  border: none;
+  // box-shadow: 0px 1px 2px 1px rgb(0 0 0 / 20%);
+  margin-left: 6px;
 }
 
 .playBackRate {
@@ -37,7 +40,7 @@
     content: "×";
     position: absolute;
     bottom: -2px;
-    left: 21px;
+    left: 15px;
   }
 
   & > select {
@@ -61,13 +64,15 @@
   display: inline-block;
   text-align: center;
   line-height: 48px;
-  padding: 0 1em;
+  // padding: 0 1em;
+  font-size: 14px;
   background-color: $color-darkest-grey;
 
   .currentTime {
     color: $color-light-shilo;
     cursor: pointer;
-    font-family: "Lucida Console", monospace;
+    font-size: 14px;
+    // font-family: "Lucida Console", monospace;
   }
 
   .separator {

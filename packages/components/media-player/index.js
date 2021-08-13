@@ -406,10 +406,10 @@ class MediaPlayer extends React.Component {
           ) : null}
         </div>
         <div className="row">
-          <div className="col-md-8 progressBar">
+          <div className="col-md-7 progressBar">
             {this.props.mediaUrl ? progressBar : null}
           </div>
-          <div className="col-md-4 progressControl">
+          <div className="col-md-5 progressControl">
             <div className={styles.controlsSection}>
               <PlayerControls
                 playMedia={this.togglePlayMedia.bind(this)}

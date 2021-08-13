@@ -1,0 +1,1211 @@
+{
+  "action": "audio-transcribe",
+  "retval": {
+    "status": true,
+    "wonid": "octo:2692ea33-d595-41d8-bfd5-aa7f2d2f89ee",
+    "punct": "Cryptocurrency is a digital payment system that doesn't rely on banks to verify transactions. It's a peer to peer system that can enable anyone anywhere to send and receive payments instead of being physical money that is carried around and exchanged. In the real world, Cryptocurrency payments exist purely as digital entries to an online database that describes specific transactions. When you transfer Cryptocurrency funds, the transactions are recorded in a public leisure, you store your Cryptocurrency in a digital wallet. Cryptocurrency got its name because it uses encryption to verify transactions. This means advanced coding is involved in storing and transmitting Cryptocurrency data between wallets and to public ledgers. The aim of the encryption is to provide security and safety.",
+    "words": [
+      {
+        "start": "0.04",
+        "end": "1.21",
+        "confidence": "0.993",
+        "word": "Cryptocurrency",
+        "punct": "Cryptocurrency",
+        "risklevel": "",
+        "index": 0
+      },
+      {
+        "start": "1.21",
+        "end": "1.36",
+        "confidence": "1.0",
+        "word": "is",
+        "punct": "is",
+        "risklevel": "",
+        "index": 1
+      },
+      {
+        "start": "1.36",
+        "end": "1.43",
+        "confidence": "1.0",
+        "word": "a",
+        "punct": "a",
+        "risklevel": "",
+        "index": 2
+      },
+      {
+        "start": "1.43",
+        "end": "1.84",
+        "confidence": "1.0",
+        "word": "digital",
+        "punct": "digital",
+        "risklevel": "",
+        "index": 3
+      },
+      {
+        "start": "1.84",
+        "end": "2.36",
+        "confidence": "0.945",
+        "word": "payment",
+        "punct": "payment",
+        "risklevel": "",
+        "index": 4
+      },
+      {
+        "start": "2.36",
+        "end": "2.82",
+        "confidence": "1.0",
+        "word": "system",
+        "punct": "system",
+        "risklevel": "",
+        "index": 5
+      },
+      {
+        "start": "2.82",
+        "end": "3.0",
+        "confidence": "1.0",
+        "word": "that",
+        "punct": "that",
+        "risklevel": "",
+        "index": 6
+      },
+      {
+        "start": "3.01",
+        "end": "3.39",
+        "confidence": "1.0",
+        "word": "doesn't",
+        "punct": "doesn't",
+        "risklevel": "",
+        "index": 7
+      },
+      {
+        "start": "3.39",
+        "end": "3.8",
+        "confidence": "0.844",
+        "word": "rely",
+        "punct": "rely",
+        "risklevel": "",
+        "index": 8
+      },
+      {
+        "start": "3.8",
+        "end": "4.04",
+        "confidence": "1.0",
+        "word": "on",
+        "punct": "on",
+        "risklevel": "",
+        "index": 9
+      },
+      {
+        "start": "4.04",
+        "end": "4.44",
+        "confidence": "0.998",
+        "word": "banks",
+        "punct": "banks",
+        "risklevel": "",
+        "index": 10
+      },
+      {
+        "start": "4.44",
+        "end": "4.57",
+        "confidence": "0.998",
+        "word": "to",
+        "punct": "to",
+        "risklevel": "",
+        "index": 11
+      },
+      {
+        "start": "4.57",
+        "end": "5.17",
+        "confidence": "1.0",
+        "word": "verify",
+        "punct": "verify",
+        "risklevel": "",
+        "index": 12
+      },
+      {
+        "start": "5.17",
+        "end": "6.39",
+        "confidence": "0.999",
+        "word": "transactions",
+        "punct": "transactions",
+        "risklevel": "",
+        "index": 13
+      },
+      {
+        "start": "6.66",
+        "end": "6.94",
+        "confidence": "0.921",
+        "word": "It's",
+        "punct": "It's",
+        "risklevel": "",
+        "index": 14
+      },
+      {
+        "start": "6.94",
+        "end": "7.02",
+        "confidence": "0.998",
+        "word": "a",
+        "punct": "a",
+        "risklevel": "",
+        "index": 15
+      },
+      {
+        "start": "7.02",
+        "end": "7.33",
+        "confidence": "0.998",
+        "word": "peer",
+        "punct": "peer",
+        "risklevel": "",
+        "index": 16
+      },
+      {
+        "start": "7.33",
+        "end": "7.47",
+        "confidence": "1.0",
+        "word": "to",
+        "punct": "to",
+        "risklevel": "",
+        "index": 17
+      },
+      {
+        "start": "7.47",
+        "end": "7.79",
+        "confidence": "1.0",
+        "word": "peer",
+        "punct": "peer",
+        "risklevel": "",
+        "index": 18
+      },
+      {
+        "start": "7.79",
+        "end": "8.36",
+        "confidence": "1.0",
+        "word": "system",
+        "punct": "system",
+        "risklevel": "",
+        "index": 19
+      },
+      {
+        "start": "8.36",
+        "end": "8.53",
+        "confidence": "1.0",
+        "word": "that",
+        "punct": "that",
+        "risklevel": "",
+        "index": 20
+      },
+      {
+        "start": "8.53",
+        "end": "8.76",
+        "confidence": "1.0",
+        "word": "can",
+        "punct": "can",
+        "risklevel": "",
+        "index": 21
+      },
+      {
+        "start": "8.76",
+        "end": "9.28",
+        "confidence": "1.0",
+        "word": "enable",
+        "punct": "enable",
+        "risklevel": "",
+        "index": 22
+      },
+      {
+        "start": "9.29",
+        "end": "9.76",
+        "confidence": "1.0",
+        "word": "anyone",
+        "punct": "anyone",
+        "risklevel": "high",
+        "index": 23
+      },
+      {
+        "start": "9.76",
+        "end": "10.27",
+        "confidence": "0.97",
+        "word": "anywhere",
+        "punct": "anywhere",
+        "risklevel": "high",
+        "index": 24
+      },
+      {
+        "start": "10.27",
+        "end": "10.42",
+        "confidence": "1.0",
+        "word": "to",
+        "punct": "to",
+        "risklevel": "high",
+        "index": 25
+      },
+      {
+        "start": "10.42",
+        "end": "10.76",
+        "confidence": "1.0",
+        "word": "send",
+        "punct": "send",
+        "risklevel": "high",
+        "index": 26
+      },
+      {
+        "start": "10.76",
+        "end": "10.97",
+        "confidence": "1.0",
+        "word": "and",
+        "punct": "and",
+        "risklevel": "",
+        "index": 27
+      },
+      {
+        "start": "10.97",
+        "end": "11.45",
+        "confidence": "1.0",
+        "word": "receive",
+        "punct": "receive",
+        "risklevel": "high",
+        "index": 28
+      },
+      {
+        "start": "11.45",
+        "end": "12.06",
+        "confidence": "1.0",
+        "word": "payments",
+        "punct": "payments",
+        "risklevel": "high",
+        "index": 29
+      },
+      {
+        "start": "12.44",
+        "end": "12.94",
+        "confidence": "1.0",
+        "word": "instead",
+        "punct": "instead",
+        "risklevel": "high",
+        "index": 30
+      },
+      {
+        "start": "12.94",
+        "end": "13.07",
+        "confidence": "1.0",
+        "word": "of",
+        "punct": "of",
+        "risklevel": "high",
+        "index": 31
+      },
+      {
+        "start": "13.07",
+        "end": "13.39",
+        "confidence": "1.0",
+        "word": "being",
+        "punct": "being",
+        "risklevel": "high",
+        "index": 32
+      },
+      {
+        "start": "13.39",
+        "end": "13.87",
+        "confidence": "1.0",
+        "word": "physical",
+        "punct": "physical",
+        "risklevel": "high",
+        "index": 33
+      },
+      {
+        "start": "13.87",
+        "end": "14.17",
+        "confidence": "1.0",
+        "word": "money",
+        "punct": "money",
+        "risklevel": "",
+        "index": 34
+      },
+      {
+        "start": "14.17",
+        "end": "14.36",
+        "confidence": "1.0",
+        "word": "that",
+        "punct": "that",
+        "risklevel": "",
+        "index": 35
+      },
+      {
+        "start": "14.36",
+        "end": "14.52",
+        "confidence": "1.0",
+        "word": "is",
+        "punct": "is",
+        "risklevel": "",
+        "index": 36
+      },
+      {
+        "start": "14.52",
+        "end": "14.91",
+        "confidence": "1.0",
+        "word": "carried",
+        "punct": "carried",
+        "risklevel": "",
+        "index": 37
+      },
+      {
+        "start": "14.91",
+        "end": "15.39",
+        "confidence": "1.0",
+        "word": "around",
+        "punct": "around",
+        "risklevel": "",
+        "index": 38
+      },
+      {
+        "start": "15.39",
+        "end": "15.57",
+        "confidence": "1.0",
+        "word": "and",
+        "punct": "and",
+        "risklevel": "",
+        "index": 39
+      },
+      {
+        "start": "15.57",
+        "end": "16.39",
+        "confidence": "1.0",
+        "word": "exchanged",
+        "punct": "exchanged",
+        "risklevel": "",
+        "index": 40
+      },
+      {
+        "start": "16.39",
+        "end": "16.51",
+        "confidence": "1.0",
+        "word": "In",
+        "punct": "In",
+        "risklevel": "",
+        "index": 41
+      },
+      {
+        "start": "16.51",
+        "end": "16.65",
+        "confidence": "1.0",
+        "word": "the",
+        "punct": "the",
+        "risklevel": "",
+        "index": 42
+      },
+      {
+        "start": "16.65",
+        "end": "16.99",
+        "confidence": "1.0",
+        "word": "real",
+        "punct": "real",
+        "risklevel": "",
+        "index": 43
+      },
+      {
+        "start": "16.99",
+        "end": "17.57",
+        "confidence": "1.0",
+        "word": "world",
+        "punct": "world",
+        "risklevel": "",
+        "index": 44
+      },
+      {
+        "start": "17.58",
+        "end": "18.75",
+        "confidence": "1.0",
+        "word": "Cryptocurrency",
+        "punct": "Cryptocurrency",
+        "risklevel": "",
+        "index": 46
+      },
+      {
+        "start": "18.75",
+        "end": "19.35",
+        "confidence": "1.0",
+        "word": "payments",
+        "punct": "payments",
+        "risklevel": "",
+        "index": 47
+      },
+      {
+        "start": "19.35",
+        "end": "19.88",
+        "confidence": "0.998",
+        "word": "exist",
+        "punct": "exist",
+        "risklevel": "",
+        "index": 48
+      },
+      {
+        "start": "19.88",
+        "end": "20.33",
+        "confidence": "1.0",
+        "word": "purely",
+        "punct": "purely",
+        "risklevel": "",
+        "index": 49
+      },
+      {
+        "start": "20.33",
+        "end": "20.48",
+        "confidence": "1.0",
+        "word": "as",
+        "punct": "as",
+        "risklevel": "",
+        "index": 50
+      },
+      {
+        "start": "20.48",
+        "end": "20.88",
+        "confidence": "1.0",
+        "word": "digital",
+        "punct": "digital",
+        "risklevel": "",
+        "index": 51
+      },
+      {
+        "start": "20.88",
+        "end": "21.32",
+        "confidence": "0.999",
+        "word": "entries",
+        "punct": "entries",
+        "risklevel": "",
+        "index": 52
+      },
+      {
+        "start": "21.32",
+        "end": "21.49",
+        "confidence": "0.992",
+        "word": "to",
+        "punct": "to",
+        "risklevel": "",
+        "index": 53
+      },
+      {
+        "start": "21.49",
+        "end": "21.63",
+        "confidence": "1.0",
+        "word": "an",
+        "punct": "an",
+        "risklevel": "",
+        "index": 54
+      },
+      {
+        "start": "21.63",
+        "end": "22.18",
+        "confidence": "0.976",
+        "word": "online",
+        "punct": "online",
+        "risklevel": "",
+        "index": 55
+      },
+      {
+        "start": "22.18",
+        "end": "22.82",
+        "confidence": "1.0",
+        "word": "database",
+        "punct": "database",
+        "risklevel": "",
+        "index": 56
+      },
+      {
+        "start": "22.82",
+        "end": "23.03",
+        "confidence": "1.0",
+        "word": "that",
+        "punct": "that",
+        "risklevel": "",
+        "index": 57
+      },
+      {
+        "start": "23.03",
+        "end": "23.6",
+        "confidence": "0.809",
+        "word": "describes",
+        "punct": "describes",
+        "risklevel": "",
+        "index": 58
+      },
+      {
+        "start": "23.6",
+        "end": "24.19",
+        "confidence": "1.0",
+        "word": "specific",
+        "punct": "specific",
+        "risklevel": "",
+        "index": 59
+      },
+      {
+        "start": "24.19",
+        "end": "25.25",
+        "confidence": "1.0",
+        "word": "transactions",
+        "punct": "transactions",
+        "risklevel": "",
+        "index": 60
+      },
+      {
+        "start": "25.64",
+        "end": "25.86",
+        "confidence": "1.0",
+        "word": "When",
+        "punct": "When",
+        "risklevel": "",
+        "index": 61
+      },
+      {
+        "start": "25.86",
+        "end": "25.99",
+        "confidence": "1.0",
+        "word": "you",
+        "punct": "you",
+        "risklevel": "",
+        "index": 62
+      },
+      {
+        "start": "25.99",
+        "end": "26.55",
+        "confidence": "1.0",
+        "word": "transfer",
+        "punct": "transfer",
+        "risklevel": "",
+        "index": 63
+      },
+      {
+        "start": "26.55",
+        "end": "27.62",
+        "confidence": "0.999",
+        "word": "Cryptocurrency",
+        "punct": "Cryptocurrency",
+        "risklevel": "",
+        "index": 64
+      },
+      {
+        "start": "27.62",
+        "end": "28.34",
+        "confidence": "0.998",
+        "word": "funds",
+        "punct": "funds",
+        "risklevel": "",
+        "index": 65
+      },
+      {
+        "start": "28.35",
+        "end": "28.53",
+        "confidence": "1.0",
+        "word": "the",
+        "punct": "the",
+        "risklevel": "",
+        "index": 66
+      },
+      {
+        "start": "28.53",
+        "end": "29.32",
+        "confidence": "1.0",
+        "word": "transactions",
+        "punct": "transactions",
+        "risklevel": "",
+        "index": 67
+      },
+      {
+        "start": "29.32",
+        "end": "29.56",
+        "confidence": "1.0",
+        "word": "are",
+        "punct": "are",
+        "risklevel": "",
+        "index": 68
+      },
+      {
+        "start": "29.56",
+        "end": "30.15",
+        "confidence": "1.0",
+        "word": "recorded",
+        "punct": "recorded",
+        "risklevel": "",
+        "index": 69
+      },
+      {
+        "start": "30.16",
+        "end": "30.33",
+        "confidence": "1.0",
+        "word": "in",
+        "punct": "in",
+        "risklevel": "",
+        "index": 70
+      },
+      {
+        "start": "30.33",
+        "end": "30.41",
+        "confidence": "1.0",
+        "word": "a",
+        "punct": "a",
+        "risklevel": "",
+        "index": 71
+      },
+      {
+        "start": "30.41",
+        "end": "30.83",
+        "confidence": "1.0",
+        "word": "public",
+        "punct": "public",
+        "risklevel": "",
+        "index": 72
+      },
+      {
+        "start": "30.83",
+        "end": "31.33",
+        "confidence": "0.847",
+        "word": "leisure",
+        "punct": "leisure",
+        "risklevel": "",
+        "index": 73
+      },
+      {
+        "start": "31.34",
+        "end": "31.89",
+        "confidence": "1.0",
+        "word": "you",
+        "punct": "you",
+        "risklevel": "",
+        "index": 74
+      },
+      {
+        "start": "31.89",
+        "end": "32.34",
+        "confidence": "1.0",
+        "word": "store",
+        "punct": "store",
+        "risklevel": "",
+        "index": 75
+      },
+      {
+        "start": "32.34",
+        "end": "32.57",
+        "confidence": "1.0",
+        "word": "your",
+        "punct": "your",
+        "risklevel": "",
+        "index": 76
+      },
+      {
+        "start": "32.57",
+        "end": "33.71",
+        "confidence": "0.94",
+        "word": "Cryptocurrency",
+        "punct": "Cryptocurrency",
+        "risklevel": "",
+        "index": 77
+      },
+      {
+        "start": "33.71",
+        "end": "33.82",
+        "confidence": "0.978",
+        "word": "in",
+        "punct": "in",
+        "risklevel": "",
+        "index": 78
+      },
+      {
+        "start": "33.82",
+        "end": "33.88",
+        "confidence": "0.994",
+        "word": "a",
+        "punct": "a",
+        "risklevel": "",
+        "index": 79
+      },
+      {
+        "start": "33.88",
+        "end": "34.32",
+        "confidence": "1.0",
+        "word": "digital",
+        "punct": "digital",
+        "risklevel": "",
+        "index": 80
+      },
+      {
+        "start": "34.32",
+        "end": "34.85",
+        "confidence": "1.0",
+        "word": "wallet",
+        "punct": "wallet",
+        "risklevel": "",
+        "index": 81
+      },
+      {
+        "start": "35.44",
+        "end": "36.56",
+        "confidence": "0.999",
+        "word": "Cryptocurrency",
+        "punct": "Cryptocurrency",
+        "risklevel": "",
+        "index": 82
+      },
+      {
+        "start": "36.56",
+        "end": "36.9",
+        "confidence": "1.0",
+        "word": "got",
+        "punct": "got",
+        "risklevel": "",
+        "index": 83
+      },
+      {
+        "start": "36.9",
+        "end": "37.1",
+        "confidence": "0.962",
+        "word": "its",
+        "punct": "its",
+        "risklevel": "",
+        "index": 84
+      },
+      {
+        "start": "37.1",
+        "end": "37.42",
+        "confidence": "1.0",
+        "word": "name",
+        "punct": "name",
+        "risklevel": "",
+        "index": 85
+      },
+      {
+        "start": "37.42",
+        "end": "37.75",
+        "confidence": "1.0",
+        "word": "because",
+        "punct": "because",
+        "risklevel": "",
+        "index": 86
+      },
+      {
+        "start": "37.75",
+        "end": "37.86",
+        "confidence": "1.0",
+        "word": "it",
+        "punct": "it",
+        "risklevel": "",
+        "index": 87
+      },
+      {
+        "start": "37.86",
+        "end": "38.27",
+        "confidence": "1.0",
+        "word": "uses",
+        "punct": "uses",
+        "risklevel": "",
+        "index": 88
+      },
+      {
+        "start": "38.27",
+        "end": "38.89",
+        "confidence": "1.0",
+        "word": "encryption",
+        "punct": "encryption",
+        "risklevel": "",
+        "index": 89
+      },
+      {
+        "start": "38.89",
+        "end": "39.01",
+        "confidence": "0.997",
+        "word": "to",
+        "punct": "to",
+        "risklevel": "",
+        "index": 90
+      },
+      {
+        "start": "39.01",
+        "end": "39.55",
+        "confidence": "1.0",
+        "word": "verify",
+        "punct": "verify",
+        "risklevel": "",
+        "index": 91
+      },
+      {
+        "start": "39.55",
+        "end": "40.75",
+        "confidence": "0.999",
+        "word": "transactions",
+        "punct": "transactions",
+        "risklevel": "",
+        "index": 92
+      },
+      {
+        "start": "41.05",
+        "end": "41.42",
+        "confidence": "1.0",
+        "word": "This",
+        "punct": "this",
+        "risklevel": "",
+        "index": 93
+      },
+      {
+        "start": "41.42",
+        "end": "41.86",
+        "confidence": "1.0",
+        "word": "means",
+        "punct": "means",
+        "risklevel": "",
+        "index": 94
+      },
+      {
+        "start": "41.86",
+        "end": "42.51",
+        "confidence": "1.0",
+        "word": "advanced",
+        "punct": "advanced",
+        "risklevel": "",
+        "index": 95
+      },
+      {
+        "start": "42.51",
+        "end": "42.93",
+        "confidence": "0.965",
+        "word": "coding",
+        "punct": "coding",
+        "risklevel": "",
+        "index": 96
+      },
+      {
+        "start": "42.93",
+        "end": "43.11",
+        "confidence": "1.0",
+        "word": "is",
+        "punct": "is",
+        "risklevel": "",
+        "index": 97
+      },
+      {
+        "start": "43.11",
+        "end": "43.66",
+        "confidence": "1.0",
+        "word": "involved",
+        "punct": "involved",
+        "risklevel": "",
+        "index": 98
+      },
+      {
+        "start": "43.66",
+        "end": "43.79",
+        "confidence": "1.0",
+        "word": "in",
+        "punct": "in",
+        "risklevel": "",
+        "index": 99
+      },
+      {
+        "start": "43.79",
+        "end": "44.37",
+        "confidence": "1.0",
+        "word": "storing",
+        "punct": "storing",
+        "risklevel": "",
+        "index": 100
+      },
+      {
+        "start": "44.37",
+        "end": "44.55",
+        "confidence": "1.0",
+        "word": "and",
+        "punct": "and",
+        "risklevel": "",
+        "index": 101
+      },
+      {
+        "start": "44.55",
+        "end": "45.26",
+        "confidence": "0.994",
+        "word": "transmitting",
+        "punct": "transmitting",
+        "risklevel": "",
+        "index": 102
+      },
+      {
+        "start": "45.26",
+        "end": "46.41",
+        "confidence": "0.998",
+        "word": "Cryptocurrency",
+        "punct": "Cryptocurrency",
+        "risklevel": "",
+        "index": 103
+      },
+      {
+        "start": "46.41",
+        "end": "46.72",
+        "confidence": "1.0",
+        "word": "data",
+        "punct": "data",
+        "risklevel": "",
+        "index": 104
+      },
+      {
+        "start": "46.72",
+        "end": "47.11",
+        "confidence": "1.0",
+        "word": "between",
+        "punct": "between",
+        "risklevel": "",
+        "index": 105
+      },
+      {
+        "start": "47.11",
+        "end": "47.59",
+        "confidence": "0.994",
+        "word": "wallets",
+        "punct": "wallets",
+        "risklevel": "",
+        "index": 106
+      },
+      {
+        "start": "47.59",
+        "end": "47.85",
+        "confidence": "1.0",
+        "word": "and",
+        "punct": "and",
+        "risklevel": "",
+        "index": 107
+      },
+      {
+        "start": "47.85",
+        "end": "47.96",
+        "confidence": "0.718",
+        "word": "to",
+        "punct": "to",
+        "risklevel": "",
+        "index": 108
+      },
+      {
+        "start": "47.96",
+        "end": "48.38",
+        "confidence": "1.0",
+        "word": "public",
+        "punct": "public",
+        "risklevel": "",
+        "index": 109
+      },
+      {
+        "start": "48.38",
+        "end": "49.02",
+        "confidence": "0.927",
+        "word": "ledgers",
+        "punct": "ledgers",
+        "risklevel": "",
+        "index": 110
+      },
+      {
+        "start": "49.28",
+        "end": "49.54",
+        "confidence": "1.0",
+        "word": "The",
+        "punct": "the",
+        "risklevel": "",
+        "index": 111
+      },
+      {
+        "start": "49.55",
+        "end": "49.78",
+        "confidence": "1.0",
+        "word": "aim",
+        "punct": "aim",
+        "risklevel": "",
+        "index": 112
+      },
+      {
+        "start": "49.78",
+        "end": "49.89",
+        "confidence": "1.0",
+        "word": "of",
+        "punct": "of",
+        "risklevel": "",
+        "index": 113
+      },
+      {
+        "start": "49.89",
+        "end": "50.02",
+        "confidence": "1.0",
+        "word": "the",
+        "punct": "the",
+        "risklevel": "",
+        "index": 114
+      },
+      {
+        "start": "50.02",
+        "end": "50.57",
+        "confidence": "1.0",
+        "word": "encryption",
+        "punct": "encryption",
+        "risklevel": "",
+        "index": 115
+      },
+      {
+        "start": "50.57",
+        "end": "50.74",
+        "confidence": "1.0",
+        "word": "is",
+        "punct": "is",
+        "risklevel": "",
+        "index": 116
+      },
+      {
+        "start": "50.74",
+        "end": "50.87",
+        "confidence": "1.0",
+        "word": "to",
+        "punct": "to",
+        "risklevel": "",
+        "index": 117
+      },
+      {
+        "start": "50.87",
+        "end": "51.39",
+        "confidence": "1.0",
+        "word": "provide",
+        "punct": "provide",
+        "risklevel": "",
+        "index": 118
+      },
+      {
+        "start": "51.39",
+        "end": "52.13",
+        "confidence": "1.0",
+        "word": "security",
+        "punct": "security",
+        "risklevel": "",
+        "index": 119
+      },
+      {
+        "start": "52.13",
+        "end": "52.34",
+        "confidence": "1.0",
+        "word": "and",
+        "punct": "and",
+        "risklevel": "",
+        "index": 120
+      },
+      {
+        "start": "52.34",
+        "end": "52.97",
+        "confidence": "1.0",
+        "word": "safety",
+        "punct": "safety",
+        "risklevel": "",
+        "index": 121
+      }
+    ],
+    "segmentation": {
+      "metadata": {
+        "version": "0.0.10"
+      },
+      "@type": "AudioFile",
+      "speakers": [
+        {
+          "@id": "S0",
+          "gender": "F"
+        },
+        {
+          "@id": "S1",
+          "gender": "F"
+        },
+        {
+          "@id": "S12",
+          "gender": "F"
+        },
+        {
+          "@id": "S22",
+          "gender": "F"
+        },
+        {
+          "@id": "S10",
+          "gender": "F"
+        }
+      ],
+      "segments": [
+        {
+          "@type": "Segment",
+          "start": 0,
+          "duration": 2.74,
+          "bandwidth": "S",
+          "speaker": {
+            "@id": "S0",
+            "gender": "F"
+          }
+        },
+        {
+          "@type": "Segment",
+          "start": 9.1,
+          "duration": 3.91,
+          "bandwidth": "S",
+          "speaker": {
+            "@id": "S1",
+            "gender": "F"
+          }
+        },
+        {
+          "@type": "Segment",
+          "start": 13.01,
+          "duration": 6.75,
+          "bandwidth": "S",
+          "speaker": {
+            "@id": "S12",
+            "gender": "F"
+          }
+        },
+        {
+          "@type": "Segment",
+          "start": 19.76,
+          "duration": 1.95,
+          "bandwidth": "S",
+          "speaker": {
+            "@id": "S22",
+            "gender": "F"
+          }
+        },
+        {
+          "@type": "Segment",
+          "start": 21.71,
+          "duration": 2.63,
+          "bandwidth": "S",
+          "speaker": {
+            "@id": "S12",
+            "gender": "F"
+          }
+        },
+        {
+          "@type": "Segment",
+          "start": 24.41,
+          "duration": 19.28,
+          "bandwidth": "S",
+          "speaker": {
+            "@id": "S12",
+            "gender": "F"
+          }
+        },
+        {
+          "@type": "Segment",
+          "start": 46.72,
+          "duration": 7.22,
+          "bandwidth": "S",
+          "speaker": {
+            "@id": "S12",
+            "gender": "F"
+          }
+        },
+        {
+          "@type": "Segment",
+          "start": 52.97,
+          "duration": 7.22,
+          "bandwidth": "S",
+          "speaker": {
+            "@id": "S12",
+            "gender": "F"
+          }
+        }
+      ]
+    }
+  },
+  "elapsed": 0.090955018997192,
+  "servertime": "20181102111317.9727"
+}

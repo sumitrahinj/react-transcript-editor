@@ -76,7 +76,7 @@ class TimedTextEditor extends React.Component {
           // resets timeout
           clearTimeout(this.plauseWhileTypingTimeOut);
           this.plauseWhileTypingTimeOut = setTimeout(
-            function () {
+            function() {
               // after timeout starts playing again
               this.props.playMedia(true);
             }.bind(this),
@@ -385,11 +385,10 @@ class TimedTextEditor extends React.Component {
       // if there is no word entity associated with a char then there is no entity key
       // at that selection point
       if (entityKey === null) {
-        const closestEntityToSelection =
-          this.findClosestEntityKeyToSelectionPoint(
-            currentSelection,
-            originalBlock
-          );
+        const closestEntityToSelection = this.findClosestEntityKeyToSelectionPoint(
+          currentSelection,
+          originalBlock
+        );
         entityKey = closestEntityToSelection.entityKey;
         isEndOfParagraph = closestEntityToSelection.isEndOfParagraph;
         // handle edge case when it doesn't find a closest entity (word)
@@ -520,8 +519,9 @@ class TimedTextEditor extends React.Component {
 
   render() {
     // console.log('render TimedTextEditor');
+    // comment for beeter reach
     const currentWord = this.getCurrentWord();
-    const highlightColour = "#87a4d0";
+    const highlightColour = "#fff";
     const unplayedColor = "#767676";
     const correctionBorder = "1px dotted blue";
 
@@ -538,13 +538,14 @@ class TimedTextEditor extends React.Component {
         // onTouchStart={ event => this.handleDoubleClick(event) }
       >
         <style scoped>
-          {`span.Word[data-start="${currentWord.start}"] { background-color: ${highlightColour}; text-shadow: 0 0 0.01px black }`}
+          {`span.Word[data-start="${currentWord.start}"] { background-color: ${highlightColour}}`}
           {`span.Word[data-start="${currentWord.start}"]+span { background-color: ${highlightColour} }`}
           {`span.Word[data-prev-times~="${Math.floor(
             time
           )}"] { color: ${unplayedColor} }`}
           {`span.Word[data-prev-times~="${time}"] { color: ${unplayedColor} }`}
           {`span.Word[data-confidence="low"] { border-bottom: ${correctionBorder} }`}
+          {`span.Word[data-risklevel="low"]`}
         </style>
         <CustomEditor
           editorState={this.state.editorState}
@@ -574,17 +575,20 @@ class TimedTextEditor extends React.Component {
 
 // DraftJs decorator to recognize which entity is which
 // and know what to apply to what component
-const getEntityStrategy =
-  (mutability) => (contentBlock, callback, contentState) => {
-    contentBlock.findEntityRanges((character) => {
-      const entityKey = character.getEntity();
-      if (entityKey === null) {
-        return false;
-      }
+const getEntityStrategy = (mutability) => (
+  contentBlock,
+  callback,
+  contentState
+) => {
+  contentBlock.findEntityRanges((character) => {
+    const entityKey = character.getEntity();
+    if (entityKey === null) {
+      return false;
+    }
 
-      return contentState.getEntity(entityKey).getMutability() === mutability;
-    }, callback);
-  };
+    return contentState.getEntity(entityKey).getMutability() === mutability;
+  }, callback);
+};
 
 // decorator definition - Draftjs
 // defines what to use to render the entity
