@@ -9,7 +9,6 @@ import { secondsToTimecode } from "../../util/timecode-converter";
 import Header from "./src/Header.js";
 import ExportOptions from "./src/ExportOptions.js";
 import style from "./index.module.css";
-
 // TODO: move to another file with tooltip - rename HowDoesThisWork or HelpMessage
 // import HowDoesThisWork from "./src/HowDoesThisWork.js";
 

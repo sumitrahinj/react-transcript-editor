@@ -9,6 +9,16 @@ class Word extends Component {
 
     return false;
   }
+  generateRiskLevel = (data) => {
+    console.log("generateRiskLevel", data);
+    let risklevel = "low";
+    if (data.risk_level === "high") {
+      risklevel = data.risk_level;
+    } else if (data.risk_level === "avg") {
+      risklevel = data.risk_level;
+    }
+    return risklevel;
+  };
 
   generateConfidence = (data) => {
     // handling edge case where confidence score not present
@@ -41,17 +51,19 @@ class Word extends Component {
       : {};
 
     return (
-      <span
-        data-start={data.start}
-        data-end={data.end}
-        data-confidence={this.generateConfidence(data)}
-        data-prev-times={this.generatePreviousTimes(data)}
-        data-entity-key={data.key}
-        data-risklevel={data.risklevel}
-        className="Word"
-      >
-        {this.props.children}
-      </span>
+      <div className="">
+        <span
+          data-start={data.start}
+          data-end={data.end}
+          data-confidence={this.generateConfidence(data)}
+          data-prev-times={this.generatePreviousTimes(data)}
+          data-entity-key={data.key}
+          className="Word"
+          data-risk={this.generateRiskLevel(data)}
+        >
+          {this.props.children}
+        </span>
+      </div>
     );
   }
 }
