@@ -2,31 +2,31 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Editor } from "draft-js";
 
-  
-import WrapperBlock from './WrapperBlock';
+import WrapperBlock from "./WrapperBlock";
 
 // NOTE: custom editor is in a separate class to minimise re-renders
 // if considering refactoring, removing the separate class, please double check
 // that doing so does not introduce uncessary re-renders first.
 class CustomEditor extends React.Component {
-  handleWordClick = e => {
+  handleWordClick = (e) => {
     this.props.onWordClick(e);
   };
 
   renderBlockWithTimecodes = () => {
     return {
       component: WrapperBlock,
-      editable: true,
+      editable: false,
       props: {
         showSpeakers: this.props.showSpeakers,
         showTimecodes: this.props.showTimecodes,
         timecodeOffset: this.props.timecodeOffset,
         editorState: this.props.editorState,
-        setEditorNewContentStateSpeakersUpdate: this.props.setEditorNewContentStateSpeakersUpdate,
+        setEditorNewContentStateSpeakersUpdate: this.props
+          .setEditorNewContentStateSpeakersUpdate,
         onWordClick: this.handleWordClick,
         handleAnalyticsEvents: this.props.handleAnalyticsEvents,
-        isEditable: this.props.isEditable
-      }
+        isEditable: false,
+      },
     };
   };
 
@@ -43,7 +43,7 @@ class CustomEditor extends React.Component {
     return false;
   }
 
-  handleOnChange = e => {
+  handleOnChange = (e) => {
     this.props.onChange(e);
   };
 
