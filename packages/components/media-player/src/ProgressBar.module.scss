@@ -59,11 +59,11 @@ $fit-thumb-in-slider: -7px;
     height: $thumb-height;
     width: $thumb-width;
     position: relative;
-    margin-top: -3.5em;
+    margin-top: -3em;
     box-sizing: border-box;
     border: solid 1px transparent;
     border-radius: 1px;
-    transform: translateY(-0.25em) rotate(30deg) skewY(30deg) scaleX(0.86603);
+    transform: translateY(-1.5em) rotate(30deg) skewY(30deg) scaleX(0.86603);
     box-shadow: inset -1px -1px #3a3534;
     background: linear-gradient(
         -45deg,
@@ -89,14 +89,14 @@ $fit-thumb-in-slider: -7px;
 
   &::-moz-range-thumb {
     -moz-appearance: none;
-    height: $thumb-height;
-    width: $thumb-width;
+    height: 35px;
+    width: 35px;
     position: relative;
-    margin-top: -3.5em;
+    margin-top: -40px;
     box-sizing: border-box;
     border: solid 1px transparent;
     border-radius: 1px;
-    transform: translateY(-0.25em) rotate(30deg) skewY(30deg) scaleX(0.86603);
+    transform: translateY(-2em) rotate(30deg) skewY(30deg) scaleX(0.86603);
     box-shadow: inset -1px -1px #3a3534;
     background: linear-gradient(
         -45deg,
