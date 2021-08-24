@@ -59,7 +59,7 @@ $fit-thumb-in-slider: -7px;
     height: $thumb-height;
     width: $thumb-width;
     position: relative;
-    margin-top: -3em;
+    margin-top: -3.5em;
     box-sizing: border-box;
     border: solid 1px transparent;
     border-radius: 1px;
@@ -91,10 +91,22 @@ $fit-thumb-in-slider: -7px;
     -moz-appearance: none;
     height: $thumb-height;
     width: $thumb-width;
-    margin-top: $fit-thumb-in-slider;
-    border: 50px;
-    border-radius: 50px;
-    background: $color-labs-red;
-    box-shadow: makelongshadow($color-light-grey, $shadow-size);
+    position: relative;
+    margin-top: -3.5em;
+    box-sizing: border-box;
+    border: solid 1px transparent;
+    border-radius: 1px;
+    transform: translateY(-0.25em) rotate(30deg) skewY(30deg) scaleX(0.86603);
+    box-shadow: inset -1px -1px #3a3534;
+    background: linear-gradient(
+        -45deg,
+        #3a3534 20%,
+        #60858a 50%,
+        #3a3534 50%,
+        #3a3534 calc(50% + 1px),
+        rgba(0, 0, 0, 0) calc(50% + 1px)
+      )
+      no-repeat content-box;
+    filter: drop-shadow(0 0 #3a3534);
   }
 }
