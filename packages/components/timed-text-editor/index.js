@@ -522,7 +522,7 @@ class TimedTextEditor extends React.Component {
     // comment for beeter reach
     const currentWord = this.getCurrentWord();
     const highlightColour = "#fff";
-    const unplayedColor = "#767676";
+    const unplayedColor = "#343a40";
     const correctionBorder = "1px dotted blue";
 
     // Time to the nearest half second

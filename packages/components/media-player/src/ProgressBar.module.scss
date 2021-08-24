@@ -2,11 +2,11 @@
 
 $slider-width-number: 1440;
 $slider-width: #{$slider-width-number}px;
-$slider-height: 10px;
+$slider-height: 20px;
 $background-slider: $color-light-grey;
 $bar-slider-filled: $color-labs-red;
-$thumb-width: 35px;
-$thumb-height: 35px;
+$thumb-width: 45px;
+$thumb-height: 45px;
 $shadow-size: -7px;
 $fit-thumb-in-slider: -7px;
 
@@ -59,7 +59,7 @@ $fit-thumb-in-slider: -7px;
     height: $thumb-height;
     width: $thumb-width;
     position: relative;
-    margin-top: -2.5em;
+    margin-top: -3em;
     box-sizing: border-box;
     border: solid 1px transparent;
     border-radius: 1px;

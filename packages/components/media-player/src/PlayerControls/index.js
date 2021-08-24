@@ -79,7 +79,7 @@ class PlayerControls extends React.Component {
           <button
             value="Play/Pause: alt k"
             title="Play/Pause: alt k"
-            className={`myplayerButton ${style.playerButton}`}
+            className={`myplayerButton playpauseicon ${style.playerButton}`}
             onClick={this.props.playMedia}
           >
             {this.props.isPlaying ? (
