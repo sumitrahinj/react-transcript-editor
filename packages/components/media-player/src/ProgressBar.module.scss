@@ -5,8 +5,8 @@ $slider-width: #{$slider-width-number}px;
 $slider-height: 20px;
 $background-slider: $color-light-grey;
 $bar-slider-filled: $color-labs-red;
-$thumb-width: 45px;
-$thumb-height: 45px;
+$thumb-width: 50px;
+$thumb-height: 50px;
 $shadow-size: -7px;
 $fit-thumb-in-slider: -7px;
 
@@ -27,9 +27,9 @@ $fit-thumb-in-slider: -7px;
 .wrapper {
   width: 100%;
   overflow-x: hidden;
-  position: absolute;
+  position: relative;
   left: 0;
-  bottom: -16px;
+  bottom: -12px;
 }
 .progress-wrapper {
   position: relative;
