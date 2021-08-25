@@ -59,7 +59,7 @@ $fit-thumb-in-slider: -7px;
     height: 35px;
     width: 35px;
     position: relative;
-    margin-top: -1.8em;
+    margin-top: -2em;
     box-sizing: border-box;
     border: solid 1px transparent;
     border-radius: 1px;
@@ -84,7 +84,6 @@ $fit-thumb-in-slider: -7px;
     content: "";
     pointer-events: none;
     background: $bar-slider-filled;
-    border-radius: 50px;
   }
 
   &::-moz-range-thumb {
@@ -95,7 +94,7 @@ $fit-thumb-in-slider: -7px;
     box-sizing: border-box;
     border: solid 1px transparent;
     border-radius: 1px;
-    transform: translateY(-2em) rotate(30deg) skewY(30deg) scaleX(0.76603);
+    transform: translateY(-2.2em) rotate(30deg) skewY(30deg) scaleX(0.76603);
     box-shadow: inset -1px -1px #3a3534;
     background: linear-gradient(
         -45deg,
