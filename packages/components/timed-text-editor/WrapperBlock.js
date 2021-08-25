@@ -210,6 +210,20 @@ class WrapperBlock extends React.Component {
     return (
       <div className="mainwrapperBlock">
         <div className={style.WrapperBlock}>
+          <div className="chaticon">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21.6 0H2.4C1.0764 0 0 1.0764 0 2.4V24L4.8 19.2H21.6C22.9236 19.2 24 18.1236 24 16.8V2.4C24 1.0764 22.9236 0 21.6 0ZM14.4 13.2H6V10.8H14.4V13.2ZM18 8.4H6V6H18V8.4Z"
+                fill="#495057"
+              />
+            </svg>
+          </div>
           <div
             className={[style.markers, style.unselectable].join(" ")}
             contentEditable={false}
