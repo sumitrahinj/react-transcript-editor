@@ -49,7 +49,7 @@ class TranscriptEditor extends React.Component {
       showTimecodes: true,
       showSpeakers: true,
       previewIsDisplayed: true,
-      mediaDuration: "00:00:00:00",
+      mediaDuration: "00:00",
       gridDisplay: null,
     };
     this.timedTextEditorRef = React.createRef();
